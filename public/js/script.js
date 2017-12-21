@@ -104,7 +104,7 @@ var formSubmit = () => {
 
     $.ajax({
         type: "GET",
-        url: "http://localhost:3002/clips/"+encodeURIComponent(JSON.stringify(queryData)),
+        url: "http://rumball-home-videos-client.herokuapp.com/clips/"+encodeURIComponent(JSON.stringify(queryData)),
         contentType: "application/json; charset=utf-8",
         dataType: "json",
         complete: (res) => {
