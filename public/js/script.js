@@ -207,4 +207,10 @@ var fillClips = (res) => {
     }
 
     $('#clip-list').html(newHTML);
+
+    images = document.querySelectorAll('#playImage');
+	for(var i = 0; i < images.length; i++) 
+	{
+        $(images[i]).on('click', onClipClicked);
+    }
 };
